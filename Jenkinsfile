@@ -7,14 +7,14 @@ pipeline {
         checkout scm
       }
     }
-    stages {
-      steps('Build') {
+    stages('Build') {
+      steps {
         echo ' Building the applicaation ...'
         sh ' echo "Build completed successfully. "'
       }
     }
-    stages {
-      steps('Test') {
+    stages('Test') {
+      steps {
             echo 'Running tests ...'
             sh ' echo "All tests passed. "'
             }
