@@ -37,7 +37,7 @@ pipeline {
       echo ' Pipeline failed'
     }
     always {
-      archiveArtifact artifacts: 'output/deployement.txt', fingerprint: true
+      archiveArtifacts artifacts: 'output/deployement.txt', fingerprint: true
       echo 'Artifact archived.'
     }
   }
