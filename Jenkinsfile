@@ -22,10 +22,10 @@ pipeline {
     stage('Deploy')  {
       steps {
         echo ' Deploying application... '
-        sh ***
+        sh '''
           mkdir -p output
         echo " deployement completed successfully." > output/deployement.txt
-        ***
+        '''
           }
     }
   }
