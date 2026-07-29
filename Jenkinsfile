@@ -14,7 +14,7 @@ pipeline {
       }
     }
     stages {
-      steps('Test") {
+      steps('Test') {
             echo 'Running tests ...'
             sh ' echo "All tests passed. "'
             }
